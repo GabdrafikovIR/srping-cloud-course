@@ -1,4 +1,4 @@
-package com.example.checkbookservice;
+package com.example.configserver.checkbookservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eureka-client
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    fetch-registry: false
+    eureka-server-connect-timeout-seconds: 60
+    eureka-service-url-poll-interval-seconds: 15
+    use-dns-for-fetching-service-urls:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30

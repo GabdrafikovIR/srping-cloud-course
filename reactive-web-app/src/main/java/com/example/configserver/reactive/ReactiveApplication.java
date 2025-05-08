@@ -1,11 +1,11 @@
-package com.example.bookservice;
+package com.example.configserver.reactive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookServiceApp {
+public class ReactiveApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BookServiceApp.class, args);
+        SpringApplication.run(ReactiveApplication.class, args);
     }
 }

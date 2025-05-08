@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  server:
+    expected-client-renewal-interval-seconds: 30
+  instance:
+    hostname: localhost  # Упрощаем хост
+    lease-expiration-duration-in-seconds: 90
+    statusPageUrl: http://localhost:8167/actuator/info
+    healthCheckUrl: http://localhost:8167/actuator/health
+    homePageUrl: http://localhost:8167/
