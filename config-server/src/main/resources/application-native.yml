@@ -12,4 +12,4 @@ spring:
         enabled: true
       server:
         native:
-          search-locations: classpath:/{application}/{profile}
+          search-locations: file:.file:eureka_config.iml

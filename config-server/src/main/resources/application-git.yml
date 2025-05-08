@@ -12,7 +12,8 @@ spring:
         enabled: true
       server:
         git:
-          uri:
+          uri: https://github.com/alex-kosarev/sc24-confg.git
           search-paths:
+            - '{application}/{profile}'
           default-label: master
           clone-on-start: true
